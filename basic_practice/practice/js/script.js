@@ -1,18 +1,10 @@
 
-body{
-  background-color: #DCDCDC;
-  /* background-image: url(../images/back.png);
-  background-repeat: repeat;
-  background-size: 20px 20px; */
-}
+$(function(){
+  
+  $("#slide").slick({dots:true});
 
-.wrapper{
-  width: 1000px;
-  background-color: #fff;
-  margin: 30px auto;
-  text-align: center;
-}
+   $(".btn").on("click",()=>{
+     $("#slide").slideToggle();
+   })
 
-img{
-  max-width: 100%;
-}
+});
